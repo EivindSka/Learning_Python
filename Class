@@ -1,0 +1,57 @@
+from time import sleep
+
+
+class Person:
+    def __init__(self, name, role, dream):
+        self.name = name
+        self.role = role
+        self.dream = dream
+
+    def show(self):
+        print(f"I am {self.name} and my role is as a {self.role}")
+
+    def showDream(self):
+        print(f"My dream is to {self.dream}")
+
+
+class Manager(Person):
+    def __init__(self, name, role):
+        super().__init__(name, role)
+
+    def show(self):
+        print(f"I am {self.name} and my role is as a {self.role}")
+
+
+class Other(Person):
+    def __init__(self, name, role):
+        super().__init__(name, role)
+
+
+p1 = Person("Ørjan", "Manager", "Be the richest man alive\n")
+p2 = Person("Eivind", "Worker", "become manager\n")
+p3 = Person("William", "Worker", "just earn som god damn money\n")
+p4 = Person("Brede", "Slave", "world dominance with my battleships\n")
+p5 = Person("Sander", "Slave", "become the new Slash\n")
+
+p1.show()
+p1.showDream()
+
+p2.show()
+p2.showDream()
+
+p3.show()
+p3.showDream()
+
+p4.show()
+p4.showDream()
+
+p5.show()
+p5.showDream()
+
+loading = "Completed\n"
+
+while True:
+    for i in range(9):
+        print(loading[i], sep=" ", end=" ", flush=True)
+        sleep(0.5)
+    break
