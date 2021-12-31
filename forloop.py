@@ -9,9 +9,11 @@ for name in names:
 
 # // Key Value Pairs //
 
-person = {'name': 'Eivind',
-          'age': 22,
-          'adress': 'Norway'}
+person = {
+    'name': 'Eivind',
+    'age': 22,
+    'adress': 'Norway'
+}
 
 for key, value in person.items():
     print(f'key: {key} value: {value}')
