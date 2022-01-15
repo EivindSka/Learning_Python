@@ -5,11 +5,11 @@ import json
 def jokes(f):
 
     data = requests.get(f)
-    tt = json.loads(data.text)
+    tt = json.loads(data)
     return tt
 
 
-f = r"https://official-joke-api.appspot.com/jokes/programming/random"
+f = "https://official-joke-api.appspot.com/jokes/programming/random"
 a = jokes(f)
 
 for i in (a):
